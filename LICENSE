@@ -1,201 +1,73 @@
-                                 Apache License
-                           Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+ГОСУДАРСТВЕННАЯ ОТКРЫТАЯ ЛИЦЕНЗИЯ, ВЕРСИЯ 1.1
 
-   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+Пояснение к лицензии:
+Любое заинтересованное лицо может по своему усмотрению применять Государственную открытую лицензию, версия 1.0 (далее – Лицензия) в целях передачи права на использование конкретной программы для ЭВМ (далее – программа или программное обеспечение). Передача права на использование программы не должна нарушать права других лиц в отношении данной программы. Поэтому лицо, передающее право на использование программы на условиях настоящей Лицензии, должно обладать исключительным правом или должно быть иным образом управомочено на передачу права на использование данной программы.
+Лицензия составлена согласно нормам действующего законодательства Российской Федерации, предназначена для использования в качестве типовой Лицензии при лицензировании программ для ЭВМ. 
+Лицензия предназначена для программ, соответствующих определению свободного программного обеспечения по ГОСТ Р 54593-2011 «Информационные технологии (ИТ). Свободное программное обеспечение. Общие положения». Каждый вправе копировать и распространять со своим свободным программным обеспечением экземпляры настоящей Лицензии без внесения изменений в ее текст.
+Если в текст Лицензии внесены любые иные изменения или дополнения, то наименование получившегося лицензионного договора должно отличаться от наименования настоящей Лицензии.
+Права на переработку, внесение изменений и дополнений (включая передачу этого права другому юридическому лицу), а также подготовку и выпуск новых версий Лицензии в качестве типовой принадлежат Министерству цифрового развития, связи и массовых коммуникаций Российской Федерации (digital.gov.ru), которое не несет ответственности за любые потери или убытки, возникшие в связи с применением этой Лицензии, в том числе по причине возможных юридических ошибок или неточностей лицензионных положений.
+Допускается копирование и распространение текста настоящего пояснения и Лицензии, а также перевод на любой другой язык для ознакомительных целей. 
+ 
+НАЧАЛО ТЕКСТА ЛИЦЕНЗИИ
 
-   1. Definitions.
+ГОСУДАРСТВЕННАЯ ОТКРЫТАЯ ЛИЦЕНЗИЯ 
+ВЕРСИЯ 1.1, 25 июня 2021 г. 
 
-      "License" shall mean the terms and conditions for use, reproduction,
-      and distribution as defined by Sections 1 through 9 of this document.
+1. ОПРЕДЕЛЕНИЯ
+"Лицензиар" – юридическое лицо (организация), публично-правовое образование (государство или муниципальное образование) или физическое лицо, передавшее Лицензиату право на использование программы для ЭВМ на условиях настоящей Лицензии. 
+"Лицензиат" – юридическое лицо (организация), публично-правовое образование (государство или муниципальное образование) или физическое лицо, получившее право на использование программы для ЭВМ на условиях настоящей Лицензии.
+"Лицензия" – настоящий лицензионный договор, заключенный между Лицензиаром и Лицензиатом.
+"Исходный текст" – программа для ЭВМ в форме текста на языке программирования, который может быть прочтен человеком.
+"Объектный код" – программа для ЭВМ в форме любого кода, предназначенного для исполнения ЭВМ, за исключением Исходного текста.
+"Программа" – программа для ЭВМ в форме Исходного текста и/или Объектного кода, экземпляр (копию) которой Лицензиар передает Лицензиату на условиях настоящей Лицензии.
+"Производная программа" – программа для ЭВМ, полученная в результате любых изменений или дополнений (модификаций) Исходного текста, осуществленных Лицензиатом или третьим лицом по поручению Лицензиата.
+"Автор" – физическое лицо, создавшее Программу или участвовавшее в создании/ изменении Программы.
 
-      "Licensor" shall mean the copyright owner or entity authorized by
-      the copyright owner that is granting the License.
+2. ПРАВА ЛИЦЕНЗИАТА
+2.1. Лицензиат вправе любым определенным настоящей Лицензией и не запрещенным законодательством Российской Федерации образом использовать, модифицировать, а также распространять Программу в исходном или модифицированном виде на территории Российской Федерации и государств - членов Евразийского экономического союза в течение срока действия исключительного права на Программу. 
+2.2. Целью настоящей Лицензии является юридическое оформление передачи Лицензиаром в пользу Лицензиата права использования Программы.
+2.3. Действующее законодательство Российской Федерации и государств - членов Евразийского экономического союза может содержать специальные нормы об открытых или свободных лицензиях на произведения. Такие специальные нормы регулируют отношения сторон по настоящей Лицензии, если это согласуется с целью настоящей Лицензии в каждом конкретном случае. Противоречие настоящей Лицензии таким специальным нормам не означает незаконность, недействительность или отсутствие судебной защиты настоящей Лицензии, которая в этом случае применяется согласно действующим нормам о лицензионных договорах.
+2.4 Лицензиат не вправе удалять или изменять содержащиеся в Программе, включая ее отдельные части, Исходном тексте и/или Объектном коде, а также в документации на Программу указание на Лицензиара и Автора (авторов), а также сведения о создании Программы (наименование, версия, дата создания и проч.). Правило настоящего пункта применяется и к Производной программе.
+2.5. Право использования Программы по настоящей Лицензии предоставляется безвозмездно, кроме случая, когда стороны отдельно согласовали размер вознаграждения или порядок его определения.
 
-      "Legal Entity" shall mean the union of the acting entity and all
-      other entities that control, are controlled by, or are under common
-      control with that entity. For the purposes of this definition,
-      "control" means (i) the power, direct or indirect, to cause the
-      direction or management of such entity, whether by contract or
-      otherwise, or (ii) ownership of fifty percent (50%) or more of the
-      outstanding shares, or (iii) beneficial ownership of such entity.
+3. ВСТУПЛЕНИЕ ЛИЦЕНЗИИ В СИЛУ 
+3.1. Настоящий лицензионный договор является договором присоединения и может заключаться любым способом, позволяющим достоверно установить, что предложение заключить Лицензию исходит от Лицензиара, а согласие с условиями Лицензии исходит от Лицензиата. В частности, использование Программы регулируется настоящей Лицензией, если:
+(i) настоящая Лицензия или наименование и версия настоящей Лицензии, а также ссылка на общедоступную страницу в интернете, на которой размещен текст настоящей Лицензии, приведены в начале файла Исходного текста Программы или ее части, полученного Лицензиатом от Лицензиара; или
+(ii) настоящая Лицензия или наименование и версия настоящей Лицензии, а также ссылка на общедоступную страницу в интернете, на которой размещен текст настоящей Лицензии, приведены в файле LICENSE, размещенном в корневом каталоге носителя (папки, машинного носителя или репозитории), содержащего Программу; или
+(iii) настоящая Лицензия или наименование и версия настоящей Лицензии, а также ссылка на общедоступную страницу в интернете, на которой размещен текст настоящей Лицензии, отображаются в ходе осуществленной Лицензиатом установки или первом запуске Программы; или
+(iv) настоящая Лицензия изложена в электронном виде на полученном Лицензиатом носителе с копией (экземпляром) Программы или на упаковке (оберточная лицензия); или
+(v) настоящая Лицензия составлена в виде документа на бумаге, который подписан сторонами, при условии, что Лицензия включает указание на наименование и версию Программы. 
+3.2. Настоящая Лицензия вступает в силу с момента выражения Лицензиатом согласия с ее условиями. Если Лицензиат не выразил согласия с условиями настоящей Лицензии, Лицензиат не приобретает никаких прав по настоящей Лицензии. 
+3.3. Лицензиат признается согласившимся с условиями настоящей Лицензии с момента совершения Лицензиатом любого из следующих действий:
+(i) использование Программы, а именно, осуществление Лицензиатом любого из действий, являющихся способом использования Программы согласно настоящей Лицензии; или
+(ii) принятие Лицензиатом настоящей Лицензии посредством отметки соответствующего пункта или положительного ответа на вопрос о принятии Лицензии в диалоговом окне при установке или первом запуске Программы; или
+(iii) подписание Лицензиатом настоящей Лицензии.
+В этом случае письменная форма договора считается соблюденной.
+3.4. Настоящая Лицензия не вступает в силу, несмотря на выражение Лицензиатом согласия с ее условиями, пока Лицензиат не получил Программу от Лицензиара. 
+3.5. Если настоящая Лицензия не вступила в силу, признана незаключенной или недействительной в целом, использование Программы регулируется нормами о свободном использовании программы для ЭВМ лицом, правомерно владеющим экземпляром программы для ЭВМ (статья 1280 Гражданского кодекса Российской Федерации или иные подобные нормы законодательства Российской Федерации). Соответственно, независимо от условий настоящей Лицензии, в случаях, когда использованием Программы нарушаются нормы закона, может быть признано допустимым ограниченное использование Программы, включая право запускать Программу по назначению. Права на Производную программу, любые иные права Лицензиата или третьего лица, возникшие вследствие использования Лицензиатом Программы до досрочного прекращения настоящей Лицензии, а также сублицензионные соглашения, заключенные Лицензиатом до досрочного прекращения настоящей Лицензии, сохраняют силу.
+3.6. Лицензиар вправе в одностороннем порядке полностью или частично отказаться от лицензионного договора, если Лицензиат будет использовать Программу или предоставлять третьим лицам права на использование принадлежащего Лицензиару произведения либо на использование нового результата интеллектуальной деятельности, созданного Лицензиатом на основе Программы, за пределами прав, которые предусмотрены данной Лицензией.
+3.7. Настоящей Лицензией не регулируется оказание услуг посредством удаленного доступа к Программе без передачи копии Программы (облачные вычисления и проч.). 
 
-      "You" (or "Your") shall mean an individual or Legal Entity
-      exercising permissions granted by this License.
+4. ИСПОЛЬЗОВАНИЕ ПРОГРАММЫ 
+Данный раздел уточняет п.2.1 Лицензии. 
+4.1. Лицензиат вправе использовать Программу или ее части в любых не запрещенных законодательством Российской Федерации целях. Право на использование Программы предполагает как непосредственное исполнение инструкций процессором ЭВМ, так и процедуру её установки и упаковки в различные форматы (для последующего запуска).
 
-      "Source" form shall mean the preferred form for making modifications,
-      including but not limited to software source code, documentation
-      source, and configuration files.
+4.2. Лицензиат вправе изучать, как Программа работает, и перерабатывать ее для своих целей. Лицензиар должен предоставить Лицензиату Исходный текст Программы в полном объеме или предоставить возможность его получить без дополнительных условий. Например, посредством скачивания из сети Интернет или по запросу. К Исходному тексту не должны быть применены меры намеренного запутывания (обфускации) и  иные меры, не позволяющие изучать, дополнять или изменять Исходный текст Программы.
 
-      "Object" form shall mean any form resulting from mechanical
-      transformation or translation of a Source form, including but
-      not limited to compiled object code, generated documentation,
-      and conversions to other media types.
+4.3. Лицензиат может распространять копии Программы. Право включает возможность воспроизводить Программу, то есть изготавливать экземпляры Программы или ее части в любой форме. Право включает возможность передавать экземпляры (копии) Программы любому лицу и на любых условиях, при передаче копий Программы следует учитывать, что личные неимущественные права Автора (авторов) Программы неотъемлемы и действуют бессрочно.
 
-      "Work" shall mean the work of authorship, whether in Source or
-      Object form, made available under the License, as indicated by a
-      copyright notice that is included in or attached to the work
-      (an example is provided in the Appendix below).
+4.4. Лицензиат может перерабатывать и распространять свою измененную версию Программы. Право на переработку включает перевод на другие языки или осуществление иной адаптации Программы, то есть является созданием Производной программы. Право распространения Производной программы дает возможность передавать экземпляры (копии) Производной программы любому лицу в пределах прав, которые предусмотрены данной Лицензией, при условии соблюдения п.2.4 настоящего лицензионного договора.
 
-      "Derivative Works" shall mean any work, whether in Source or Object
-      form, that is based on (or derived from) the Work and for which the
-      editorial revisions, annotations, elaborations, or other modifications
-      represent, as a whole, an original work of authorship. For the purposes
-      of this License, Derivative Works shall not include works that remain
-      separable from, or merely link (or bind by name) to the interfaces of,
-      the Work and Derivative Works thereof.
+5. ОТВЕТСТВЕННОСТЬ 
+5.1. Положения пунктов 5.2 – 5.5 настоящей Лицензии могут быть изменены путем заключения дополнительного соглашения в виде отдельного документа, заключаемого сторонами. Обязанности и ответственность, которые могут быть возложены на Лицензиара, не распространяются на Автора (авторов), если Автором является другое лицо, а также на лиц, от которых Лицензиар получил Программу или Исходный текст, использованный при создании Программы.
+5.2. Программа передается Лицензиату в состоянии «как есть» со всеми возможными недостатками или ошибками, существующими на момент получения Лицензиатом экземпляра (копии) Программы или появившимися впоследствии по причинам, существовавшим на момент получения Лицензиатом экземпляра (копии) Программы. Лицензиар не отвечает за недостатки Программы, не обязан их исправлять или предоставлять техническую поддержку, не гарантирует коммерческую ценность Программы и пригодность для определённой цели. Лицензиат несет полную ответственность за определение целесообразности использования или распространения Программы.
+5.3. Лицензиар не несет ответственности за убытки (как за реальный ущерб, так и за упущенную выгоду, а также за какие-либо другие убытки), вызванные возможными недостатками или ошибками Программы, даже если доказано, что Лицензиар знал или должен был знать о таких недостатках или ошибках.  В частности, Лицензиар не несет ответственность за убытки Лицензиата по причине ненадлежащего функционирования Программы или невозможности  ее использования. Равным образом Лицензиар не несет ответственности за убытки Лицензиата, возникшие по причине нарушения использованием и/или распространением  Программы исключительных или иных прав третьих лиц. 
+5.4. Лицензиар не обязан исправлять недостатки или ошибки Программы независимо от времени обнаружения недостатков или ошибок, не обязан обучать Лицензиата работе с Программой или  предоставлять Лицензиату техническую поддержку, а также не обязан передавать Лицензиату исправления или обновления, новые или измененные версии Программы.
+5.5. Ни одна из сторон не вправе требовать от другой стороны возмещения убытков, уплаты штрафов или требовать применения к другой стороне любых иных мер ответственности. Лицензиат не несет ответственности за действия сублицензиата.
+6.	ПРОЧИЕ УСЛОВИЯ
+6.1. Лицензия не требует от Лицензиата распространять Производную программу на условиях настоящей Лицензии. Применение настоящей Лицензии для производного произведения остается на усмотрение Лицензиата.
+6.2. Настоящая лицензия является неисключительной. Лицензиар сохраняет за собой право использования Программы, а также может предоставлять право использования Программы иным лицам на любых условиях в пределах прав, которые предусмотрены данной Лицензией.
+6.3. Лицензиат не обязан предоставлять отчеты об использовании Программы по настоящей Лицензии.
+6.4. К отношениям сторон по настоящей Лицензии применяется право Российской Федерации. Компетентным судом для разрешения любых споров по настоящей Лицензии, включая споры в связи с заключением, исполнением, толкованием или недействительностью настоящей Лицензии или ее отдельных положений, является суд по месту нахождения ответчика, определяемый согласно процессуальным правилам, действующим в месте нахождения ответчика. 
 
-      "Contribution" shall mean any work of authorship, including
-      the original version of the Work and any modifications or additions
-      to that Work or Derivative Works thereof, that is intentionally
-      submitted to Licensor for inclusion in the Work by the copyright owner
-      or by an individual or Legal Entity authorized to submit on behalf of
-      the copyright owner. For the purposes of this definition, "submitted"
-      means any form of electronic, verbal, or written communication sent
-      to the Licensor or its representatives, including but not limited to
-      communication on electronic mailing lists, source code control systems,
-      and issue tracking systems that are managed by, or on behalf of, the
-      Licensor for the purpose of discussing and improving the Work, but
-      excluding communication that is conspicuously marked or otherwise
-      designated in writing by the copyright owner as "Not a Contribution."
-
-      "Contributor" shall mean Licensor and any individual or Legal Entity
-      on behalf of whom a Contribution has been received by Licensor and
-      subsequently incorporated within the Work.
-
-   2. Grant of Copyright License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      copyright license to reproduce, prepare Derivative Works of,
-      publicly display, publicly perform, sublicense, and distribute the
-      Work and such Derivative Works in Source or Object form.
-
-   3. Grant of Patent License. Subject to the terms and conditions of
-      this License, each Contributor hereby grants to You a perpetual,
-      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
-      (except as stated in this section) patent license to make, have made,
-      use, offer to sell, sell, import, and otherwise transfer the Work,
-      where such license applies only to those patent claims licensable
-      by such Contributor that are necessarily infringed by their
-      Contribution(s) alone or by combination of their Contribution(s)
-      with the Work to which such Contribution(s) was submitted. If You
-      institute patent litigation against any entity (including a
-      cross-claim or counterclaim in a lawsuit) alleging that the Work
-      or a Contribution incorporated within the Work constitutes direct
-      or contributory patent infringement, then any patent licenses
-      granted to You under this License for that Work shall terminate
-      as of the date such litigation is filed.
-
-   4. Redistribution. You may reproduce and distribute copies of the
-      Work or Derivative Works thereof in any medium, with or without
-      modifications, and in Source or Object form, provided that You
-      meet the following conditions:
-
-      (a) You must give any other recipients of the Work or
-          Derivative Works a copy of this License; and
-
-      (b) You must cause any modified files to carry prominent notices
-          stating that You changed the files; and
-
-      (c) You must retain, in the Source form of any Derivative Works
-          that You distribute, all copyright, patent, trademark, and
-          attribution notices from the Source form of the Work,
-          excluding those notices that do not pertain to any part of
-          the Derivative Works; and
-
-      (d) If the Work includes a "NOTICE" text file as part of its
-          distribution, then any Derivative Works that You distribute must
-          include a readable copy of the attribution notices contained
-          within such NOTICE file, excluding those notices that do not
-          pertain to any part of the Derivative Works, in at least one
-          of the following places: within a NOTICE text file distributed
-          as part of the Derivative Works; within the Source form or
-          documentation, if provided along with the Derivative Works; or,
-          within a display generated by the Derivative Works, if and
-          wherever such third-party notices normally appear. The contents
-          of the NOTICE file are for informational purposes only and
-          do not modify the License. You may add Your own attribution
-          notices within Derivative Works that You distribute, alongside
-          or as an addendum to the NOTICE text from the Work, provided
-          that such additional attribution notices cannot be construed
-          as modifying the License.
-
-      You may add Your own copyright statement to Your modifications and
-      may provide additional or different license terms and conditions
-      for use, reproduction, or distribution of Your modifications, or
-      for any such Derivative Works as a whole, provided Your use,
-      reproduction, and distribution of the Work otherwise complies with
-      the conditions stated in this License.
-
-   5. Submission of Contributions. Unless You explicitly state otherwise,
-      any Contribution intentionally submitted for inclusion in the Work
-      by You to the Licensor shall be under the terms and conditions of
-      this License, without any additional terms or conditions.
-      Notwithstanding the above, nothing herein shall supersede or modify
-      the terms of any separate license agreement you may have executed
-      with Licensor regarding such Contributions.
-
-   6. Trademarks. This License does not grant permission to use the trade
-      names, trademarks, service marks, or product names of the Licensor,
-      except as required for reasonable and customary use in describing the
-      origin of the Work and reproducing the content of the NOTICE file.
-
-   7. Disclaimer of Warranty. Unless required by applicable law or
-      agreed to in writing, Licensor provides the Work (and each
-      Contributor provides its Contributions) on an "AS IS" BASIS,
-      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
-      implied, including, without limitation, any warranties or conditions
-      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
-      PARTICULAR PURPOSE. You are solely responsible for determining the
-      appropriateness of using or redistributing the Work and assume any
-      risks associated with Your exercise of permissions under this License.
-
-   8. Limitation of Liability. In no event and under no legal theory,
-      whether in tort (including negligence), contract, or otherwise,
-      unless required by applicable law (such as deliberate and grossly
-      negligent acts) or agreed to in writing, shall any Contributor be
-      liable to You for damages, including any direct, indirect, special,
-      incidental, or consequential damages of any character arising as a
-      result of this License or out of the use or inability to use the
-      Work (including but not limited to damages for loss of goodwill,
-      work stoppage, computer failure or malfunction, or any and all
-      other commercial damages or losses), even if such Contributor
-      has been advised of the possibility of such damages.
-
-   9. Accepting Warranty or Additional Liability. While redistributing
-      the Work or Derivative Works thereof, You may choose to offer,
-      and charge a fee for, acceptance of support, warranty, indemnity,
-      or other liability obligations and/or rights consistent with this
-      License. However, in accepting such obligations, You may act only
-      on Your own behalf and on Your sole responsibility, not on behalf
-      of any other Contributor, and only if You agree to indemnify,
-      defend, and hold each Contributor harmless for any liability
-      incurred by, or claims asserted against, such Contributor by reason
-      of your accepting any such warranty or additional liability.
-
-   END OF TERMS AND CONDITIONS
-
-   APPENDIX: How to apply the Apache License to your work.
-
-      To apply the Apache License to your work, attach the following
-      boilerplate notice, with the fields enclosed by brackets "[]"
-      replaced with your own identifying information. (Don't include
-      the brackets!)  The text should be enclosed in the appropriate
-      comment syntax for the file format. We also recommend that a
-      file or class name and description of purpose be included on the
-      same "printed page" as the copyright notice for easier
-      identification within third-party archives.
-
-   Copyright [yyyy] [name of copyright owner]
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+КОНЕЦ ТЕКСТА ЛИЦЕНЗИИ
