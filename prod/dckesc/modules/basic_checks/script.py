@@ -57,10 +57,7 @@ def main(data):
         }
 
     # Dangerous capabilities check
-    output["bad_capabilities"] = {
-        "status": False,
-        "details": ""
-    }
+
     bad_caps, find_bad_caps = ["cap_sys_admin", "cap_sys_ptrace", "cap_sys_module", "cap_dac_read_search", "cap_sys_rawio", "cap_mknod"], []
     caps = list(exec("grep CapEff /proc/self/status").split(":"))[1].strip()
     caps = parse_capabilities(caps)

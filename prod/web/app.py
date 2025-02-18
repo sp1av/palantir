@@ -17,7 +17,7 @@ from flask_login import current_user
 from flask import send_from_directory
 import requests
 from sqlalchemy.dialects.postgresql import JSONB
-HOST = "10.137.0.17"
+HOST = "192.168.0.164"
 
 from config import Config
 
