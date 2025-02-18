@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #00ff00;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+.offensive-btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.offensive-btn:hover {
+    background-color: darkred;
+}
+
+.defensive-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.defensive-btn:hover {
+    background-color: darkblue;
+}
+
+form {
+    display: none;
+    margin-top: 20px;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #00ff00;
+    background-color: black;
+    color: #00ff00;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/* Убираем стрелочки у input number */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.container-id-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container-id-group input {
+    width: 100%;
+    margin-right: 5px;
+}
+
+.container-id-group button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-id-group button:hover {
+    background-color: darkred;
+}
+
+#add-container-id {
+    background-color: #00ff00;
+    color: black;
+    font-size: 20px;
+    padding: 5px 15px;
+}
+
+#add-container-id:hover {
+    background-color: #00cc00;
+}
+
+.show {
+    display: block;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SETTINGS</h1>
+        <ul>
+            <li><a href="/settings/change_username">Change Username</a></li>
+            <li><a href="/settings/change_password">Change Password</a></li>
+            <li><a href="/settings/share_reports">Share Reports</a></li>
+            <li><a href="/settings/delete_account" class="danger">Delete Account</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>

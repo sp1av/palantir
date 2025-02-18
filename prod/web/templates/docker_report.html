@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Security Scan Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+    body {
+        background-color: #181818;  /* Черный фон */
+        color: #00ff00;  /* Ярко-зеленый цвет текста для читаемости */
+        font-family: Arial, sans-serif;
+        padding: 30px;
+    }
+
+    h1, h2 {
+        color: #00ff00;  /* Зеленый цвет для заголовков */
+        margin-bottom: 20px;
+        font-size: 2.5em;
+        text-align: center;
+        text-shadow: 0 0 10px #00ff00;
+    }
+
+    h3 {
+        color: #00cc00;  /* Зеленоватый оттенок для подзаголовков */
+        font-size: 1.8em;
+        margin-top: 20px;
+        text-shadow: 0 0 5px #00cc00;
+    }
+
+    p {
+        color: #00ff00;  /* Зеленый для основного текста */
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        line-height: 1.6;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #222222;  /* Темный фон для контейнера */
+        border-radius: 10px;
+        border: 2px solid #00ff00;  /* Зеленая рамка для акцента */
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);  /* Легкая зеленая тень */
+        margin-bottom: 40px;
+    }
+
+    .container div {
+        margin-bottom: 20px;
+    }
+
+    .container .section-header {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #00ff00;
+        text-shadow: 0 0 5px #00ff00;
+    }
+
+    .container ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    .container li {
+        font-size: 1.1em;
+        margin: 5px 0;
+        color: #00ff00;
+        text-align: left;
+    }
+
+    .container button {
+        background-color: #00cc00;  /* Зеленая кнопка */
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        font-family: inherit;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .container button:hover {
+        background-color: #00ff00;
+    }
+
+    .offensive-btn {
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .offensive-btn:hover {
+        background-color: #ff3300;
+    }
+
+    .defensive-btn {
+        background-color: #0000ff;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        cursor: pointer;
+        font-family: inherit;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .defensive-btn:hover {
+        background-color: #0033cc;
+    }
+
+    .show {
+        display: block;
+    }
+
+    /* Адаптивность для мобильных устройств */
+    @media screen and (max-width: 768px) {
+        body {
+            font-size: 14px;
+        }
+
+        h1, h2 {
+            font-size: 1.8em;
+        }
+
+        h3 {
+            font-size: 1.4em;
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .container p, .container ul {
+            font-size: 1em;
+        }
+
+        .container button {
+            font-size: 14px;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+    <h1>Docker Security Scan Report</h1>
+
+    <h2>Vulnerabilities Overview</h2>
+
+    {% if vulnerabilities.docker_socket %}
+    <div>
+        <h3>Docker Socket:</h3>
+        <p>Status: {{ vulnerabilities.docker_socket.status }}</p>
+        <p>Details: {{ vulnerabilities.docker_socket.details }}</p>
+    </div>
+    {% endif %}
+
+    {% if vulnerabilities.privileged_mode %}
+    <div>
+        <h3>Privileged Mode:</h3>
+        <p>Status: {{ vulnerabilities.privileged_mode.status }}</p>
+        <p>Details: {{ vulnerabilities.privileged_mode.details }}</p>
+    </div>
+    {% endif %}
+
+    {% if vulnerabilities.bad_capabilities %}
+    <div>
+        <h3>Bad Capabilities:</h3>
+        <p>Status: {{ vulnerabilities.bad_capabilities.status }}</p>
+        <p>Details:
+            <ul>
+                {% for capability in vulnerabilities.bad_capabilities.details %}
+                    <li>{{ capability }}</li>
+                {% endfor %}
+            </ul>
+        </p>
+    </div>
+    {% endif %}
+
+    {% if vulnerabilities.docker_group %}
+    <div>
+        <h3>Docker Group:</h3>
+        <p>Status: {{ vulnerabilities.docker_group.status }}</p>
+        <p>Details: {{ vulnerabilities.docker_group.details }}</p>
+    </div>
+    {% endif %}
+
+</body>
+</html>

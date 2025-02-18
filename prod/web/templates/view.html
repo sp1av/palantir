@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Scans</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view.css') }}">
+</head>
+<body>
+    <h1>Available Scans</h1>
+    <div class="scan-container">
+        {% for scan in scans %}
+            <a href="{{ url_for('scan_detail', scan_id=scan.id) }}" class="scan-card {{ 'offensive' if scan.mode == 'offensive' else 'defensive' }}">
+                <div class="scan-info">
+                    <h2>{{ scan.name }}</h2>
+                    <p class="scan-date">{{ scan.date }}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+</body>
+</html>

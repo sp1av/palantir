@@ -1,0 +1,4 @@
+{
+	"module_name": "basic_checks",
+	"data_from_main": ["control", "read_til", "conn"]
+}

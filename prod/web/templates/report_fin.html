@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker Security Scan Report</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .report-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222;
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        h1 {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+
+        h2 {
+            color: #00ccff;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Docker Security Scan Report</h1>
+
+    {% for docker in results %}
+        <div class="report-container">
+            <h2>
+                {% if multiple_containers %}
+                    Report {{ docker.docker_id }}
+                {% else %}
+                    Report
+                {% endif %}
+            </h2>
+
+            {% if docker.vulnerabilities %}
+              {% set vulnerabilities = docker.vulnerabilities %}
+
+              {% if vulnerabilities.docker_socket %}
+                  <h3>Docker Socket:</h3>
+                  <p>Status: {{ vulnerabilities.docker_socket.status }}</p>
+                  <p>Details: {{ vulnerabilities.docker_socket.details }}</p>
+              {% endif %}
+
+              {% if vulnerabilities.privileged_mode %}
+                  <h3>Privileged Mode:</h3>
+                  <p>Status: {{ vulnerabilities.privileged_mode.status }}</p>
+                  <p>Details: {{ vulnerabilities.privileged_mode.details }}</p>
+              {% endif %}
+
+              {% if vulnerabilities.bad_capabilities %}
+                  <h3>Bad Capabilities:</h3>
+                  <p>Status: {{ vulnerabilities.bad_capabilities.status }}</p>
+                  <ul>
+                      {% for capability in vulnerabilities.bad_capabilities.details %}
+                          <li>{{ capability }}</li>
+                      {% endfor %}
+                  </ul>
+              {% endif %}
+
+              {% if vulnerabilities.docker_group %}
+                  <h3>Docker Group:</h3>
+                  <p>Status: {{ vulnerabilities.docker_group.status }}</p>
+                  <p>Details: {{ vulnerabilities.docker_group.details }}</p>
+              {% endif %}
+            {% else %}
+              <p>No vulnerabilities found. The container is secure.</p>
+            {% endif %}
+        </div>
+    {% endfor %}
+
+</body>
+</html>

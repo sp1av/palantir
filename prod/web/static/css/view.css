@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: black;
+    color: #00ff00;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00ff00;
+}
+
+.scan-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.scan-card {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #00ff00;
+}
+
+.offensive {
+    background-color: red;
+}
+
+.defensive {
+    background-color: blue;
+}
+
+.scan-info h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.scan-date {
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.scan-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}

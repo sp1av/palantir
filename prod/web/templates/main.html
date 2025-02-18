@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Dckesc web Portal</h1>
+
+        <nav>
+            <ul>
+                <li><a href="/about">Info</a></li>
+                <li><a href="/share">Share Reports</a></li>
+                <li><a href="/create">Create Report</a></li>
+                <li><a href="/view">View Reports</a></li>
+            </ul>
+        </nav>
+
+        <div class="infographic">
+            <!-- Тут будет инфографика -->
+            <p>Future Cyber Metrics</p>
+        </div>
+
+        <div class="buttons">
+            <a href="/create" class="btn">Create Report</a>
+            <a href="/view" class="btn">View Reports</a>
+        </div>
+    </div>
+</body>
+</html>

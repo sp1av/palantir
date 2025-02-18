@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./web
+    container_name: web_container
+    ports:
+      - "1703:1703"
+    depends_on:
+      - postgres
+    networks:
+      - backend
+    environment:
+      READY: 1
+      PYTHONUNBUFFERED: 1
+      FLASK_ENV: production
+    healthcheck:
+      test: [ "CMD-SHELL", "echo $READY" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  dckesc:
+    build: ./dckesc
+    container_name: dckesc_container
+    ports:
+      - "12936:22"
+    depends_on:
+      web:
+        condition: service_healthy
+    networks:
+      - backend
+
+
+  postgres:
+    image: postgres:latest
+    container_name: my_postgres
+    environment:
+      POSTGRES_USER: splav
+      POSTGRES_PASSWORD: splav
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+    networks:
+      - backend
+
+
+networks:
+  backend:
+    driver: bridge
